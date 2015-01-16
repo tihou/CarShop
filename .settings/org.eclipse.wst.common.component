@@ -2,6 +2,11 @@
 <project-modules id="moduleCoreId" project-version="1.5.0">
     <wb-module deploy-name="CarShop">
         <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/FDC"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/FFC"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/FGC"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/FOC"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/FTC"/>
         <property name="context-root" value="CarShop"/>
         <property name="java-output-path" value="/CarShop/build/classes"/>
     </wb-module>
