@@ -13,11 +13,25 @@
 		<mybatis.version>3.2.8</mybatis.version>
 	</properties>
 	<dependencies>
-		<!-- 数据库连接池 -->
+		<!-- dbcp数据源 -->
+		<dependency>
+			<groupId>commons-dbcp</groupId>
+			<artifactId>commons-dbcp</artifactId>
+			<version>1.4</version>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- druid数据源 -->
 		<dependency>
 			<groupId>com.alibaba</groupId>
 			<artifactId>druid</artifactId>
 			<version>1.0.12</version>
+			<scope>runtime</scope>
+		</dependency>
+		<!-- c3p0数据源 -->
+		<dependency>
+			<groupId>c3p0</groupId>
+			<artifactId>c3p0</artifactId>
+			<version>0.9.1.2</version>
 		</dependency>
 		<!-- mysql jdbc 驱动 -->
 		<dependency>
@@ -25,7 +39,7 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>${org.mysql.version}</version>
 		</dependency>
-		<!-- mybatis orm 依赖-->
+		<!-- mybatis orm 依赖 -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
 			<artifactId>mybatis</artifactId>
@@ -41,6 +55,23 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+		<!-- 远程方法调用依赖 -->
+		<dependency>
+			<groupId>com.caucho</groupId>
+			<artifactId>hessian</artifactId>
+			<version>4.0.38</version>
+		</dependency>
+		<!-- 日志 -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
 		</dependency>
 		<!-- 测试依赖包 -->
 		<dependency>
